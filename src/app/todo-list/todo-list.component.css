@@ -1,0 +1,46 @@
+/* todo.component.css */
+:host {
+    display: block;
+    background-color: #343a40; /* Dark background color for the entire component */
+    color: #ffffff; /* Light text color for the entire component */
+    padding: 20px;
+  }
+  
+  .input-group,
+  .list-group-item {
+    background-color: #495057; /* Darker background color for input group and list items */
+    border-color: #343a40; /* Border color for input group and list items */
+  }
+  
+  .list-group-item span {
+    color: #ffffff; /* Light text color for task text */
+  }
+  
+  .btn-primary,
+  .btn-success,
+  .btn-danger {
+    background-color: #007bff; /* Primary, Success, and Danger button background color */
+    border-color: #007bff; /* Border color for buttons */
+  }
+  
+  .btn-primary:hover,
+  .btn-success:hover,
+  .btn-danger:hover {
+    background-color: #0056b3; /* Button background color on hover */
+    border-color: #0056b3; /* Border color on hover */
+  }
+  
+  .btn-primary:focus,
+  .btn-success:focus,
+  .btn-danger:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Button focus shadow color */
+  }
+  
+  .btn-success {
+    margin-right: 8px; /* Adjusted margin for better spacing between buttons */
+  }
+  
+  .done {
+    text-decoration: line-through; /* Line-through style for completed tasks */
+  }
+  

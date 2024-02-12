@@ -1,0 +1,20 @@
+<!-- todo.component.html -->
+<div class="container mt-4">
+    <h2 class="text-center mb-4">My To-Do List</h2>
+    <div class="d-flex flex-column align-items-center">
+      <div class="input-group mb-3">
+        <input class="form-control" [(ngModel)]="newTask" placeholder="Enter a task">
+        <button class="btn btn-primary" (click)="addTask()">Add Task</button>
+      </div>
+      <ul class="list-group w-75">
+        <li *ngFor="let task of tasks" class="list-group-item d-flex align-items-center justify-content-between">
+          <span [class.done]="task.done">{{ task.text }}</span>
+          <div>
+            <button *ngIf="!task.completed" class="btn btn-sm btn-success" (click)="markAsDone(task)">✓</button>
+            <button class="btn btn-sm btn-danger" (click)="removeTask(task)">❌</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
