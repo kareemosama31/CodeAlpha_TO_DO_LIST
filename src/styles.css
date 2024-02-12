@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+body {
+    background-color: #343a40; /* Dark background color for the entire page */
+    color: #ffffff; /* Light text color for the entire page */
+  }
+  
+  .container {
+    background-color: #343a40; /* Dark background color for the container */
+  }
+  
